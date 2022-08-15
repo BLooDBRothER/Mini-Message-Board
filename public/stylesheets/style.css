@@ -1,8 +1,84 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+:root{
+  --primary: #ccd5ae;
+  --secondary: #1d3557;
+  --secondary-partial: rgba(29, 53, 87, 0.8);
+  --accent: #000814;
+  --hover: #ef233c;
+}
+
+body{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header .btn{
+  cursor: pointer;
+  color: var(--accent);
+}
+
+header .btn:hover{
+  color: var(--hover);
+}
+
+main{
+  padding: 1rem;
+}
+
+main h1{
+  margin-bottom: 1rem;
+}
+
+.msg-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.msg{
+  width: 350px;
+  height: 350px;
+  background-color: var(--secondary-partial);
+  border: 1px solid var(--hover);
+  border-radius: 1rem;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--primary);
+}
+
+.msg-title{
+  text-align: center;
+  padding-bottom: .2rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+.msg-content{
+  font-size: 1.3rem;
+  height: 200px;
+  overflow: auto;
+  text-align: center;
+  padding: 0 .5rem;
+}
+
+.msg-meta{
+  border-top: 1px solid var(--accent);
+  padding: .2rem;
+  display: flex;
+  justify-content: space-between;
 }
