@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title><%= title %>| CREATE</title>
+</head>
+<body class="new">
+    <header>
+        <h1>Create new Message</h1>
+        <a href="/" class="btn">BACK</a>
+      </header>
+      <form action="">
+        <div class="msg-title-inp">
+            <label for="title-inp">Title:</label>
+            <input type="text" name="message-title" id="title-inp">
+        </div>
+        <div class="msg-text-inp">
+            <label for="text-inp">Text:</label>
+            <textarea row="10" col="30" name="message-text" id="text-inp"></textarea>
+        </div>
+        <div class="msg-user-inp">
+            <label for="user-inp">User:</label>
+            <input type="text" name="message-user" id="user-inp">
+        </div>
+        <button class="msg-create">Create Message</button>
+      </form>
+</body>
+</html>

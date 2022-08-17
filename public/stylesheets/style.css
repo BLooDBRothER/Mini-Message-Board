@@ -17,6 +17,11 @@ body{
   color: var(--secondary);
 }
 
+a.btn{
+  text-decoration: none;
+  font-weight: bold;
+}
+
 header{
   display: flex;
   align-items: center;
@@ -81,4 +86,59 @@ main h1{
   padding: .2rem;
   display: flex;
   justify-content: space-between;
+}
+
+/* new.html */
+body.new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new header{
+  width: 100%;
+}
+
+form{
+  margin-top: 5rem;
+  border: 2px solid var(--accent);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  margin: 2rem 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form > div input, form > div textarea{
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+}
+
+form > div input:focus, form > div textarea:focus{
+  border-color: var(--hover);
+}
+
+form .msg-create{
+  margin-top: 1rem;
+  padding: .5rem 0;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: var(--secondary);
+  color: var(--primary);
+  cursor: pointer;
+}
+
+form .msg-create:hover{
+  background-color: var(--hover);
+  color: var(--accent);
 }
