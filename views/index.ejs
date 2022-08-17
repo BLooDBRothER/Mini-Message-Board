@@ -7,22 +7,12 @@
   <body>
     <header>
       <h3 class="btn">CREATE</h3>
-      <h1>Mini Message Board</h1>
+      <h1><%= title %></h1>
       <h3 class="btn">RESET</h3>
     </header>
     <main>
       <h1>Messages</h1>
-      <div class="msg-container">
-        <div class="msg">
-          <h1 class="msg-title">msg title</h1>
-          <p class="msg-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error molestias praesentium ad tempora necessitatibus obcaecati voluptatem voluptate corrupti et quas ipsa aperiam quis soluta at non ullam quo rerum.
-          </p>
-          <div class="msg-meta">
-            <h3 class="msg-author">Author</h3>
-            <h3 class="msg-date">10/12/1997</h3>
-          </div>
-        </div>
-      </div>
+      <%- include('message', {messages}); %>
     </main>
   </body>
 </html>
