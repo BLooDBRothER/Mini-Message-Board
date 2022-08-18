@@ -12,18 +12,18 @@
         <h1>Create new Message</h1>
         <a href="/" class="btn">BACK</a>
       </header>
-      <form action="">
+      <form action="/new" method="post">
         <div class="msg-title-inp">
             <label for="title-inp">Title:</label>
-            <input type="text" name="message-title" id="title-inp">
+            <input type="text" name="title" id="title-inp" required>
         </div>
         <div class="msg-text-inp">
             <label for="text-inp">Text:</label>
-            <textarea row="10" col="30" name="message-text" id="text-inp"></textarea>
+            <textarea row="10" col="30" name="text" id="text-inp" required></textarea>
         </div>
         <div class="msg-user-inp">
             <label for="user-inp">User:</label>
-            <input type="text" name="message-user" id="user-inp">
+            <input type="text" name="user" id="user-inp" required>
         </div>
         <button class="msg-create">Create Message</button>
       </form>

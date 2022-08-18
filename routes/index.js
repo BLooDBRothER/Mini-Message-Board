@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-const messages = require('../public/javascripts/message_data');
+const messages = require('../message_data');
 
 /* GET home page. */
 
