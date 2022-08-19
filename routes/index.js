@@ -1,12 +1,23 @@
 var express = require('express');
+require('dotenv').config();
+
 var router = express.Router();
 
-const messages = require('../message_data');
+let messages = require('../message_data');
 
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Mini Message Board', messages });
+});
+
+router.post('/reset', function (req, res) {
+  const data = req.body;
+  if(data.password === process.env.RESET_PASSWORD && messages.length > 3)
+  {
+      messages.splice(3, messages.length-3);
+  }
+  return res.redirect('/');
 });
 
 module.exports = router;
