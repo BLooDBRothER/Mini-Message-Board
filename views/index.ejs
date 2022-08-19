@@ -8,11 +8,25 @@
     <header>
       <a href="/new" class="btn">CREATE</a>
       <h1><%= title %></h1>
-      <h3 class="btn">RESET</h3>
+      <h3 class="btn reset-btn">RESET</h3>
     </header>
     <main>
       <h1>Messages</h1>
       <%- include('message', {messages}); %>
+      <%- include('reset'); %>
     </main>
+    <script>
+      const resetBtn = document.querySelector('.reset-btn');
+      const closeBtn = document.querySelector('.close');
+      const resetContainer = document.querySelector('.reset');
+      resetBtn.addEventListener('click', (e) => {
+        document.querySelector('body').style.overflow = 'hidden';
+        resetContainer.classList.remove('none');
+      });
+      closeBtn.addEventListener('click', (e) => {
+        document.querySelector('body').style.overflow = 'unset';
+        resetContainer.classList.add('none');
+      });
+    </script>
   </body>
 </html>
