@@ -3,7 +3,8 @@
 # Description
   Mini Message Board is a simple nodeJS(Express) app, where user from all over the world send message to the world.
   
-### The site is Deployed: [Click here to visit](https://mighty-fortress-33056.herokuapp.com/)
+#  Site Deployment ![Heroku](https://pyheroku-badge.herokuapp.com/?app=mini-message-board-top)
+[Click here to visit](https://mini-message-board-top.herokuapp.com/)
   
 # I have used
 * Node(express)
