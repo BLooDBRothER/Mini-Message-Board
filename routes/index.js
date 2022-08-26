@@ -1,6 +1,8 @@
 var express = require('express');
 require('dotenv').config();
 
+var moment = require('moment');
+
 var router = express.Router();
 
 let messages = require('../message_data');
@@ -8,7 +10,8 @@ let messages = require('../message_data');
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Mini Message Board', messages });
+  console.log(messages);
+  res.render('index', { title: 'Mini Message Board', messages, moment: moment });
 });
 
 router.post('/reset', function (req, res) {
