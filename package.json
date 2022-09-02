@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "devstart": "nodemon ./bin/www",
+    "start": "node ./bin/www"
   },
   "engines": { "node": "16.15.0" },
   "dependencies": {
